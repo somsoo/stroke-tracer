@@ -1,0 +1,8 @@
+{
+  "name": "선 따라 쓱쓱 스트로크 트레이서",
+  "short_name": "스트로크트레이서",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6"
+}

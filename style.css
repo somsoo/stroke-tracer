@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.ad-top-wrapper {
+  width: 100%;
+  max-height: 90px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: #f1f5f9;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.ad-top-box {
+  width: 100%;
+  max-width: 1200px;
+  max-height: 90px;
+  overflow: hidden;
+}
+
+.app-header {
+  text-align: center;
+  padding: 18px 12px 10px;
+  background: #ffffff;
+}
+
+.app-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.app-desc {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 12px;
+  flex: 1;
+}
+
+.mode-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.mode-btn {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #475569;
+}
+
+.mode-btn.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
+  color: #ffffff;
+}
+
+.char-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+  justify-content: center;
+}
+
+.char-btn {
+  width: 38px;
+  height: 38px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e293b;
+  transition: all 0.15s;
+}
+
+.char-btn.active {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+  box-shadow: 0 2px 4px rgba(37,99,235,0.3);
+}
+
+.status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 12px;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.stroke-info {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0284c7;
+}
+
+.star-rating {
+  font-size: 1.1rem;
+  color: #f59e0b;
+  font-weight: 700;
+}
+
+.action-btn {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  background: #10b981;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.action-btn.secondary {
+  background: #64748b;
+}
+
+.canvas-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+
+.canvas-wrapper {
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 1 / 1;
+  background: #ffffff;
+  border: 2px dashed #cbd5e1;
+  border-radius: 12px;
+  position: relative;
+  touch-action: none;
+}
+
+#traceCanvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.hint-message {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #0369a1;
+  text-align: center;
+}
+
+.ad-mid-wrapper, .ad-bottom-wrapper {
+  margin: 18px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.edu-guide {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.edu-guide h2 {
+  font-size: 1.05rem;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.edu-guide p {
+  font-size: 0.85rem;
+  color: #475569;
+  margin-bottom: 12px;
+}
+
+.guide-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+@media (min-width: 600px) {
+  .guide-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.guide-card {
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.guide-card h3 {
+  font-size: 0.9rem;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.guide-card p {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-bottom: 0;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  border-top: 1px solid #e2e8f0;
+  background: #ffffff;
+}
+
+.footer-links a {
+  color: #64748b;
+  text-decoration: none;
+}
